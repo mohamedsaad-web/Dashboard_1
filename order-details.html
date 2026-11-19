@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Details</title>
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/order-details.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-fohloky">
+    <div class="page d-flex">
+      <div class="sidebar p-20 border-r p-fixed bg-white">
+        <div class="logo">
+          <img src="imgs/letter-n.png" alt="" />
+        </div>
+        <ul class="side-list">
+          <li>
+            <a href="index.html" class="align-center rad-6">
+              <i class="fa-solid fa-house-chimney"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="orders.html" class="align-center rad-6">
+              <i class="fa-regular fa-bell"></i>
+              <span>Orders</span>
+            </a>
+          </li>
+          <li>
+            <a href="order-details.html" class="active align-center rad-6">
+              <i class="active fa-regular fa-clock"></i>
+              <span>Order Details</span>
+            </a>
+          </li>
+          <li>
+            <a href="menu.html" class="align-center rad-6">
+              <i class="fa-solid fa-sliders"></i>
+              <span>Menu Management</span>
+            </a>
+          </li>
+          <li>
+            <a href="reservation.html" class="align-center rad-6">
+              <i class="fa-regular fa-calendar-days"></i>
+              <span>Reservation</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html" class="align-center rad-6">
+              <i class="fa-solid fa-sd-card"></i>
+              <span>Folders</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html" class="align-center rad-6">
+              <i class="fa-regular fa-comment-dots"></i>
+              <span>Messages</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html" class="align-center rad-6">
+              <i class="fa-solid fa-list-check"></i>
+              <span>Tasks</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html" class="align-center rad-6">
+              <i class="fa-solid fa-network-wired"></i>
+              <span>Cables</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html" class="align-center rad-6">
+              <i class="fa-solid fa-gear"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main">
+        <div class="head align-center j-between border-b p-15 bg-fohloky">
+          <div class="main-head d-flex">
+            <h1 class="mr-20 txt-black">Order Details</h1>
+            <input type="date" class="border-round rad-6" />
+          </div>
+          <div class="right-head align-center gap-20">
+            <div class="search">
+              <input type="search" placeholder="Search " class="border-round" />
+            </div>
+            <div class="pell center-center circle p-relative">
+              <i class="fa-regular fa-bell"></i>
+            </div>
+            <div class="profile">
+              <img src="imgs/avatar-05.png" alt="" class="circle" />
+            </div>
+          </div>
+        </div>
+        <div class="content p-20">
+          <div class="content-head j-between align-center">
+            <div class="info d-flex">
+              <div class="data">
+                <a href="orders.html"
+                  ><i class="fa-solid fa-arrow-left-long"></i> Back to Orders</a
+                >
+                <h2>Order #ORD-1024</h2>
+              </div>
+              <div class="state">Preparing</div>
+            </div>
+            <p>Placed today at 12:45 PM</p>
+          </div>
+          <div class="details">
+            <!-- <div class="order-items p-20 bg-white">
+
+                </div> -->
+            <div class="order-item rad-12 p-20">
+              <div class="main-data">
+                <h3>Order Items</h3>
+                <p>Customer request and selected menu items</p>
+                <div class="table">
+                    <table class="w-100">
+                    <thead>
+                        <tr>
+                            <th class="bg-fohloky">ITEM</th>
+                            <th class="bg-fohloky">QTY</th>
+                            <th class="bg-fohloky">PRICE</th>
+                            <th class="bg-fohloky">TOTAL</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Classic Burger</td>
+                            <td>2</td>
+                            <td>$12.00</td>
+                            <td>$24.00</td>
+                        </tr>
+                        <tr>
+                            <td>French Fries</td>
+                            <td>1</td>
+                            <td>$5.50</td>
+                            <td>$5.50</td>
+                        </tr>
+                        <tr>
+                            <td>Fresh Lemonade</td>
+                            <td>4</td>
+                            <td>$6.50</td>
+                            <td>$13.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+              </div>
+              <ul class="reset">
+                <li >
+                    Subtotal <span class="price">$42.50</span>
+                </li>
+                <li>
+                    Delivery fee <span class="price">$3.00</span>
+                </li>
+                <li>
+                    Discount <span class="price">-$3.50</span>
+                </li>
+                <li>
+                    Total <span class="price">$42.50</span>
+                </li>
+              </ul>
+            </div>
+            <div class="customer rad-12 p-20">
+                <h3>Customer</h3>
+                <ul>
+                    <li class="name">Ahmed Hassan</li>
+                    <li>ahmed.hassan@email.com</li>
+                    <li>+20 100 123 4567</li>
+                    <li>Deliveryy address: 12 El-Gomhoria SL</li>
+                </ul>
+            </div>
+            <div class="order-timeline rad-12 p-20">
+                <h3>Order Timeline</h3>
+                <ul>
+                    <li>Order placed <span class="time">12:45 PM</span></li>
+                    <li>Payment confirmed<span class="time">12:46 PM</span></li>
+                    <li>Preparing Order<span class="time">12:52 PM</span></li>
+                    <li>Out for delivery<span class="time">Waiting</span></li>
+                </ul>
+            </div>
+            <div class="actions rad-12 p-20">
+                <h3>Actions</h3>
+                <div class="btns d-flex gap-20">
+                    <button class="update">Update Status</button>
+                    <button class="print">Print Receipt</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

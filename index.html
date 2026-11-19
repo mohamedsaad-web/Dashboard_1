@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-fohloky">
+    <div class="page d-flex">
+      <div class="sidebar p-20 border-r p-fixed bg-white">
+        <div class="logo">
+          <img src="imgs/letter-n.png" alt="" />
+        </div>
+        <ul class="side-list">
+          <li>
+            <a href="index.html" class="active align-center rad-6">
+              <i class="active fa-solid fa-house-chimney"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="orders.html" class="align-center rad-6">
+              <i class="fa-regular fa-bell"></i>
+              <span>Orders</span>
+            </a>
+          </li>
+          <li>
+            <a href="order-details.html" class="align-center rad-6">
+              <i class="fa-regular fa-clock"></i>
+              <span>Order Details</span>
+            </a>
+          </li>
+          <li>
+            <a href="menu.html" class="align-center rad-6">
+              <i class="fa-solid fa-sliders"></i>
+              <span>Menu Management</span>
+            </a>
+          </li>
+          <li>
+            <a href="reservation.html" class="align-center rad-6">
+              <i class="fa-regular fa-calendar-days"></i>
+              <span>Reservation</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html" class="align-center rad-6">
+              <i class="fa-solid fa-sd-card"></i>
+              <span>Folders</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html" class="align-center rad-6">
+              <i class="fa-regular fa-comment-dots"></i>
+              <span>Messages</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html" class="align-center rad-6">
+              <i class="fa-solid fa-list-check"></i>
+              <span>Tasks</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html" class="align-center rad-6">
+              <i class="fa-solid fa-network-wired"></i>
+              <span>Cables</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html" class="align-center rad-6">
+              <i class="fa-solid fa-gear"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main">
+        <div class="head align-center j-between border-b p-15 bg-fohloky">
+          <div class="main-head d-flex">
+            <h1 class="mr-20 txt-black">Dashboard</h1>
+            <input type="date" class="border-round rad-6" />
+          </div>
+          <div class="right-head align-center gap-20">
+            <div class="search">
+              <input type="search" placeholder="Search " class="border-round" />
+            </div>
+            <div class="pell center-center circle p-relative">
+              <i class="fa-regular fa-bell"></i>
+            </div>
+            <div class="profile">
+              <img src="imgs/avatar-05.png" alt="" class="circle" />
+            </div>
+          </div>
+        </div>
+        <div class="content p-20">
+          <div class="one p-20 rad-10">
+            <div class="box1 rad-10 p-15">
+              <h3 class="txt-black">Total Order</h3>
+              <span>240</span>
+            </div>
+            <div class="box2 rad-10 p-15">
+              <h3>Delivery In Progress</h3>
+              <span>32</span>
+            </div>
+            <div class="box3 rad-10 p-15 align-center j-between">
+              <div>
+                <h3>Total Order</h3>
+                <ul class="bullets d-flex">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+              <div class="number">130</div>
+            </div>
+            <div class="box4 rad-10 p-15 align-center j-between">
+              <div>
+                <h3>Total Revenue</h3>
+                <ul class="bullets d-flex">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+              <div class="number">$4350</div>
+            </div>
+          </div>
+          <div class="two rad-10 pl-15 pr-15 pt-20 pb-20 p-relative">
+            <div class="gragh-head j-between align-center">
+              <div class="info">
+                <h2>Total Revenue</h2>
+                <select>
+                  <option value="">This Year</option>
+                  <option value="">This Month</option>
+                  <option value="">This Day</option>
+                </select>
+              </div>
+              <div class="stats">
+                <div class="flag1 p-relative">Income</div>
+                <div class="flag2 p-relative">Expanses</div>
+              </div>
+            </div>
+            <div class="main-gragh d-flex p-relative">
+              <ul class="col-gragh pr-15">
+                <li>1,000</li>
+                <li>800</li>
+                <li>600</li>
+                <li>400</li>
+                <li>200</li>
+                <li>0</li>
+              </ul>
+              <div class="images p-relative">
+                <img src="imgs/Dark (1).png" alt="gragh" />
+                <img src="imgs/Vector 2.png" alt="" />
+              </div>
+            </div>
+            <ul class="row-gragh">
+              <li>Jan</li>
+              <li>Feb</li>
+              <li>Mar</li>
+              <li>Apr</li>
+              <li>May</li>
+              <li>Jun</li>
+              <li>Jul</li>
+              <li>Aug</li>
+              <li>Sep</li>
+              <li>Oct</li>
+              <li>Nov</li>
+            </ul>
+          </div>
+          <div class="three rad-10 p-relative">
+            <div class="info j-between p-20">
+              <h2>Total Revenue</h2>
+              <select>
+                <option value="">This Year</option>
+                <option value="" selected>This Month</option>
+                <option value="">This Day</option>
+              </select>
+            </div>
+            <div class="percentage">73%</div>
+            <ul class="d-flex">
+              <li>Sea Food</li>
+              <li>Beverage</li>
+              <li>Pasta</li>
+            </ul>
+          </div>
+          <div class="four rad-10 p-20">
+            <div class="table-inf j-between align-center">
+              <h2>Recent Orders</h2>
+              <select>
+                <option value="">Last Year</option>
+                <option value="">2025</option>
+                <option value="">2024</option>
+                <option value="">2023</option>
+                <option value="">2022</option>
+                <option value="">2021</option>
+              </select>
+            </div>
+            <div class="table">
+              <table>
+                <thead>
+                  <tr>
+                    <th class="bg-fohloky">Order ID</th>
+                    <th class="bg-fohloky">Order Type</th>
+                    <th class="bg-fohloky">Attendant</th>
+                    <th class="bg-fohloky">Time</th>
+                    <th class="bg-fohloky">Status</th>
+                    <th class="bg-fohloky">Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>0012</td>
+                    <td>Takeways</td>
+                    <td>Laura Olivia-228</td>
+                    <td>Jan 13,2026. 01:00:00</td>
+                    <td><span class="state">Paid</span></td>
+                    <td>$300</td>
+                  </tr>
+                  <tr>
+                    <td>0013</td>
+                    <td>Feedback</td>
+                    <td>Mark Jonson-156</td>
+                    <td>Jan 15,2026. 03:20:00</td>
+                    <td><span class="state">Paid</span></td>
+                    <td>$280</td>
+                  </tr>
+                  <tr>
+                    <td>0014</td>
+                    <td>Updates</td>
+                    <td>Louis Yaml-302</td>
+                    <td>Jan 17,2026. 11:10:20</td>
+                    <td><span class="state">Paid</span></td>
+                    <td>$460</td>
+                  </tr>
+                  <tr>
+                    <td>0015</td>
+                    <td>Takeways</td>
+                    <td>Laura Olivia-228</td>
+                    <td>Feb 1,2026. 01:00:00</td>
+                    <td><span class="state">Paid</span></td>
+                    <td>$300</td>
+                  </tr>
+                  <tr>
+                    <td>0016</td>
+                    <td>Feedback</td>
+                    <td>Laura Olivia-228</td>
+                    <td>Jan 14,2026. 01:00:00</td>
+                    <td><span class="state">Paid</span></td>
+                    <td>$885</td>
+                  </tr>
+                  <tr>
+                    <td>0016</td>
+                    <td>Takeways</td>
+                    <td>Laura Olivia-228</td>
+                    <td>May 28,2026. 01:00:00</td>
+                    <td><span class="state">Paid</span></td>
+                    <td>$700</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="five rad-10 p-20">
+            <div class="cat-head j-between">
+              <h2>Order Type</h2>
+              <select>
+                <option>This Year</option>
+                <option selected>This Month</option>
+                <option>This Day</option>
+              </select>
+            </div>
+            <div class="catigories">
+              <div class="box d-flex align-center gap-20">
+                <i class="fa-solid fa-mug-saucer"></i>
+                <div class="data">
+                  <div class="data-title j-between">
+                    <div class="type d-flex align-center gap-10">
+                      <h3>Juice</h3>
+                      <span>15%</span>
+                    </div>
+                    <div class="num">500</div>
+                  </div>
+                  <div class="line"></div>
+                </div>
+              </div>
+              <div class="box d-flex align-center gap-20">
+                <i class="fa-solid fa-martini-glass"></i>
+                <div class="data">
+                  <div class="data-title j-between">
+                    <div class="type d-flex align-center gap-10">
+                      <h3>Soda</h3>
+                      <span>30%</span>
+                    </div>
+                    <div class="num">1200</div>
+                  </div>
+                  <div class="line"></div>
+                </div>
+              </div>
+              <div class="box d-flex align-center gap-20">
+                <i class="fa-solid fa-bottle-water"></i>
+                <div class="data">
+                  <div class="data-title j-between">
+                    <div class="type d-flex align-center gap-10">
+                      <h3>Water</h3>
+                      <span>5%</span>
+                    </div>
+                    <div class="num">300</div>
+                  </div>
+                  <div class="line"></div>
+                </div>
+              </div>
+              <div class="box d-flex align-center gap-20">
+                <i class="fa-solid fa-mug-hot"></i>
+                <div class="data">
+                  <div class="data-title j-between">
+                    <div class="type d-flex align-center gap-10">
+                      <h3>Tea</h3>
+                      <span>20%</span>
+                    </div>
+                    <div class="num">700</div>
+                  </div>
+                  <div class="line"></div>
+                </div>
+              </div>
+              <div class="box d-flex align-center gap-20">
+                <i class="fa-regular fa-lemon"></i>
+                <div class="data">
+                  <div class="data-title j-between">
+                    <div class="type d-flex align-center gap-10">
+                      <h3>Lemonade</h3>
+                      <span>10%</span>
+                    </div>
+                    <div class="num">450</div>
+                  </div>
+                  <div class="line"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

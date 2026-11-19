@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orders</title>
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/orders.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-fohloky">
+    <div class="page d-flex">
+      <div class="sidebar p-20 border-r p-fixed bg-white">
+        <div class="logo">
+          <img src="imgs/letter-n.png" alt="" />
+        </div>
+        <ul class="side-list">
+          <li>
+            <a href="index.html" class="align-center rad-6">
+              <i class="fa-solid fa-house-chimney"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="orders.html" class="active align-center rad-6">
+              <i class="active fa-regular fa-bell"></i>
+              <span>Orders</span>
+            </a>
+          </li>
+          <li>
+            <a href="order-details.html" class="align-center rad-6">
+              <i class="fa-regular fa-clock"></i>
+              <span>Order Details</span>
+            </a>
+          </li>
+          <li>
+            <a href="menu.html" class="align-center rad-6">
+              <i class="fa-solid fa-sliders"></i>
+              <span>Menu Management</span>
+            </a>
+          </li>
+          <li>
+            <a href="reservation.html" class="align-center rad-6">
+              <i class="fa-regular fa-calendar-days"></i>
+              <span>Reservation</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html" class="align-center rad-6">
+              <i class="fa-solid fa-sd-card"></i>
+              <span>Folders</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html" class="align-center rad-6">
+              <i class="fa-regular fa-comment-dots"></i>
+              <span>Messages</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html" class="align-center rad-6">
+              <i class="fa-solid fa-list-check"></i>
+              <span>Tasks</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html" class="align-center rad-6">
+              <i class="fa-solid fa-network-wired"></i>
+              <span>Cables</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html" class="align-center rad-6">
+              <i class="fa-solid fa-gear"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main">
+        <div class="head align-center j-between border-b p-15 bg-fohloky">
+          <div class="main-head d-flex">
+            <h1 class="mr-20 txt-black">Orders</h1>
+            <input type="date" class="border-round rad-6" />
+          </div>
+          <div class="right-head align-center gap-20">
+            <div class="search">
+              <input type="search" placeholder="Search " class="border-round" />
+            </div>
+            <div class="pell center-center circle p-relative">
+              <i class="fa-regular fa-bell"></i>
+            </div>
+            <div class="profile">
+              <img src="imgs/avatar-05.png" alt="" class="circle" />
+            </div>
+          </div>
+        </div>
+        <div class="content p-20">
+          <div class="orders">
+            <div class="box p-relative bg-white rad-10 p-20">
+              <h5>Total Orders</h5>
+              <span class="number">1,284</span>
+              <p>
+                <i class="fa-solid fa-arrow-up-long"></i> 12,8% from last month
+              </p>
+            </div>
+            <div class="box p-relative bg-white rad-10 p-20">
+              <h5>Pending</h5>
+              <span class="number">46</span>
+              <p>Needs confirmation</p>
+            </div>
+            <div class="box p-relative bg-white rad-10 p-20">
+              <h5>Preparing</h5>
+              <span class="number">28</span>
+              <p>Kitchen is working</p>
+            </div>
+            <div class="box p-relative bg-white rad-10 p-20">
+              <h5>Completed</h5>
+              <span class="number">1,210</span>
+              <p>94% completion rate</p>
+            </div>
+          </div>
+          <div class="all-orders bg-white p-20 rad-10">
+            <div class="all-title j-between align-center">
+              <div class="info">
+                <h2>All Orders</h2>
+                <p>Track and manage every resturant order</p>
+              </div>
+              <button>+ New Order</button>
+            </div>
+            <ul class="shuffle d-flex gap-15 mt-20 mb-20">
+              <li class="active">All 1,284</li>
+              <li>Pending</li>
+              <li>Preparing</li>
+              <li>Ready</li>
+              <li>Completed</li>
+              <li>Cancelled</li>
+            </ul>
+            <div class="table">
+              <table class="w-100">
+                <thead>
+                  <tr>
+                    <th>ORDER ID</th>
+                    <th>CUSTOMER</th>
+                    <th>ORDER TYPE</th>
+                    <th>DATE & TIME</th>
+                    <th>AMOUNT</th>
+                    <th>PAYMENT</th>
+                    <th>STATUS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td># ord-1024</td>
+                    <td>Ahmed Hassan</td>
+                    <td>Delivery</td>
+                    <td>Today, 12:45 PM</td>
+                    <td>$42.50</td>
+                    <td><span>Paid</span></td>
+                    <td><span>Preparing</span></td>
+                  </tr>
+                  <tr>
+                    <td># ord-1023</td>
+                    <td>Mohamed Saad</td>
+                    <td>Takeway</td>
+                    <td>Yesterday, 9:30 AM</td>
+                    <td>$70</td>
+                    <td><span>Paid</span></td>
+                    <td><span>Ready</span></td>
+                  </tr>
+                  <tr>
+                    <td># ord-1022</td>
+                    <td>Youssef Reda</td>
+                    <td>Takeway</td>
+                    <td>Today, 7:00 AM</td>
+                    <td>$34.60</td>
+                    <td><span>Pending</span></td>
+                    <td><span>Pending</span></td>
+                  </tr>
+                  <tr>
+                    <td># ord-1021</td>
+                    <td>Mohamed Saad</td>
+                    <td>Takeway</td>
+                    <td>Yesterday, 5:40 PM</td>
+                    <td>$64</td>
+                    <td><span>Paid</span></td>
+                    <td><span>Completed</span></td>
+                  </tr>
+                  <tr>
+                    <td># ord-1020</td>
+                    <td>Ali Wahid</td>
+                    <td>Dine-in . T04</td>
+                    <td>Yesterday, 5:40 PM</td>
+                    <td>$64</td>
+                    <td><span>Paid</span></td>
+                    <td><span>Cancelled</span></td>
+                  </tr>
+                  <tr>
+                    <td># ord-1024</td>
+                    <td>Ahmed Hassan</td>
+                    <td>Delivery</td>
+                    <td>Today, 12:45 PM</td>
+                    <td>$42.50</td>
+                    <td><span>Paid</span></td>
+                    <td><span>Completed</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

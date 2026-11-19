@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservations</title>
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/reservations.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-fohloky">
+    <div class="page d-flex">
+      <div class="sidebar p-20 border-r p-fixed bg-white">
+        <div class="logo">
+          <img src="imgs/letter-n.png" alt="" />
+        </div>
+        <ul class="side-list">
+          <li>
+            <a href="index.html" class="align-center rad-6">
+              <i class="fa-solid fa-house-chimney"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="orders.html" class=" align-center rad-6">
+              <i class=" fa-regular fa-bell"></i>
+              <span>Orders</span>
+            </a>
+          </li>
+          <li>
+            <a href="order-details.html" class="align-center rad-6">
+              <i class="fa-regular fa-clock"></i>
+              <span>Order Details</span>
+            </a>
+          </li>
+          <li>
+            <a href="menu.html" class="align-center rad-6">
+              <i class="fa-solid fa-sliders"></i>
+              <span>Menu Management</span>
+            </a>
+          </li>
+          <li>
+            <a href="reservation.html" class="active align-center rad-6">
+              <i class="active fa-regular fa-calendar-days"></i>
+              <span>Reservation</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html" class="align-center rad-6">
+              <i class="fa-solid fa-sd-card"></i>
+              <span>Folders</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html" class="align-center rad-6">
+              <i class="fa-regular fa-comment-dots"></i>
+              <span>Messages</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html" class="align-center rad-6">
+              <i class="fa-solid fa-list-check"></i>
+              <span>Tasks</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html" class="align-center rad-6">
+              <i class="fa-solid fa-network-wired"></i>
+              <span>Cables</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html" class="align-center rad-6">
+              <i class="fa-solid fa-gear"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main">
+        <div class="head align-center j-between border-b p-15 bg-fohloky">
+          <div class="main-head d-flex">
+            <h1 class="mr-20 txt-black">Reservation</h1>
+            <input type="date" class="border-round rad-6" />
+          </div>
+          <div class="right-head align-center gap-20">
+            <div class="search">
+              <input type="search" placeholder="Search " class="border-round" />
+            </div>
+            <div class="pell center-center circle p-relative">
+              <i class="fa-regular fa-bell"></i>
+            </div>
+            <div class="profile">
+              <img src="imgs/avatar-05.png" alt="" class="circle" />
+            </div>
+          </div>
+        </div>
+        <div class="content p-20">
+          <div class="orders">
+            <div class="box p-relative bg-white rad-10 p-20">
+              <h5>Total Orders</h5>
+              <span class="number">1,284</span>
+              <p>
+                <i class="fa-solid fa-arrow-up-long"></i> 12,8% from last month
+              </p>
+            </div>
+            <div class="box p-relative bg-white rad-10 p-20">
+              <h5>Pending</h5>
+              <span class="number">46</span>
+              <p>Needs confirmation</p>
+            </div>
+            <div class="box p-relative bg-white rad-10 p-20">
+              <h5>Preparing</h5>
+              <span class="number">28</span>
+              <p>Kitchen is working</p>
+            </div>
+            <div class="box p-relative bg-white rad-10 p-20">
+              <h5>Completed</h5>
+              <span class="number">1,210</span>
+              <p>94% completion rate</p>
+            </div>
+          </div>
+          <div class="main-reservation">
+            <div class="all-orders bg-white p-20 rad-10">
+            <div class="all-title j-between align-center mb-20">
+              <div class="info">
+                <h2>Reservation Schedule</h2>
+                <p>Sunday,August 9,2025</p>
+              </div>
+              <button>+ New Booking</button>
+            </div>
+            <ul class="time-list d-flex gap-40 pt-20 pb-20">
+                <li>11 AM</li>
+                <li>12 PM</li>
+                <li>1 PM</li>
+                <li>2 PM</li>
+                <li>3 PM</li>
+                <li>4 PM</li>
+                <li>5 PM</li>
+                <li>6 PM</li>
+                <li>7 PM</li>
+                <li>8 PM</li>
+            </ul>
+            <div class="reserve-body d-flex gap-10">
+                <ul class="col-list mt-20 lh-6">
+                    <li>Table 4</li>
+                    <li>Table 5</li>
+                    <li>Table 6</li>
+                    <li>Table 7</li>
+                    <li>Table 8</li>
+                </ul>
+                <div class="space p-relative bg-fohloky flex-1 ">
+                    <div class="square-1">
+                        <h5>Ahmed Hassan</h5>
+                        <span>2 guests</span>
+                    </div>
+                    <div class="square-2">
+                        <h5>Mona Adel</h5>
+                        <span>4 guests</span>
+                    </div>
+                    <div class="square-3">
+                        <h5>Omar Samir</h5>
+                        <span>3 guests</span>
+                    </div>
+                    <div class="square-4">
+                        <h5>Sara Mahmoud</h5>
+                        <span>5 guests</span>
+                    </div>
+                    <div class="square-5">
+                        <h5>Nour Khalid</h5>
+                        <span>2 guests</span>
+                    </div>
+                </div>
+            </div>
+            
+          </div>
+          <div class="Bookings bg-white rad-10 p-20">
+            <h3>Upcoming Bookings</h3>
+            <div class="upcoming">
+                <div class="rectangle align-center j-between">
+                    <div class="info">
+                        <span class="time">12:30 PM</span>
+                        <h6>Mona Adel</h6>
+                        <span class="guests">4 guests</span>
+                    </div>
+                    <div class="state">Confirmed</div>
+                </div>
+                <div class="rectangle align-center j-between">
+                    <div class="info">
+                        <span class="time">1:00 PM</span>
+                        <h6>Ahmed Hassan</h6>
+                        <span class="guests">2 guests</span>
+                    </div>
+                    <div class="state">Seated</div>
+                </div>
+                <div class="rectangle align-center j-between">
+                    <div class="info">
+                        <span class="time">2:45 PM</span>
+                        <h6>Omar Samir</h6>
+                        <span class="guests">3 guests</span>
+                    </div>
+                    <div class="state">Confirmed</div>
+                </div>
+                <div class="rectangle align-center j-between">
+                    <div class="info">
+                        <span class="time">5:30 PM</span>
+                        <h6>Sara Mahmoud</h6>
+                        <span class="guests">5 guests</span>
+                    </div>
+                    <div class="state">Pending</div>
+                </div>
+                <div class="rectangle align-center j-between">
+                    <div class="info">
+                        <span class="time">7:00 PM</span>
+                        <h6>Nour Khaled</h6>
+                        <span class="guests">2 guests</span>
+                    </div>
+                    <div class="state">Confirmed</div>
+                </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
